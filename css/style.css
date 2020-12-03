@@ -1,0 +1,681 @@
+@charset "utf-8";
+/*reset*/
+* { box-sizing: border-box;}
+html, body{
+          width:100%;
+          height:100%;
+          margin:0;
+          padding:0;
+          width:100%;
+          font-size:14px;
+          font-family: 'Nanum Gothic',"맑은 고딕","Malgun Gothic",sans-serif;font-weight: 400;
+          
+        }
+div,dl,dd,dt,h1,h2,h3,h4,h5,h6,p,form,fieldset,select{margin:0;padding:0}  
+header,footer,section,article,address,nav{display: block;margin:0;padding:0;}    
+ul,ol{list-style:none;margin:0;padding:0;} 
+i,em,address{font-style: normal;}   
+table{border-collapse: collapse;table-layout: fixed;}
+a{text-decoration: none;color: #373737;}
+button{background: none;border: none;margin:0;padding: 0;outline-style: none;}
+
+/* 헤더 디자인 */
+header{
+        width:100%;
+        height:180px;
+        }
+.top{
+        overflow: hidden;
+        width: 1192px;
+        margin: 0 auto;}
+.top span{
+        float: left;
+        height: 36px;
+        padding:11px 0 0 24px;
+        background:url(/kizang/image/star.png) no-repeat left 10px;}
+.top ul{float: right;}
+.top ul li{float: left;} 
+.top ul li a{
+        display:block;
+        width:138px;
+        height: 36px;
+        border-top: none;
+        border:1px solid #d0d0d0;
+        text-decoration: none; color: #373737;
+        text-align: center;
+        line-height: 36px;
+            }   
+            
+.top ul li select{
+        display:block;
+        width:138px;
+        height: 36px;
+        border-top: none;
+        padding-left: 18px;
+        border:1px solid #d0d0d0;
+        background-color: #d0d0d0;
+        color: #fff;
+        text-align: center;
+        line-height: 36px;
+        }
+.top ul li select option{color: #fff;}
+
+.header_mid{
+        overflow: hidden;
+        width: 1192px;
+        margin: 10px auto 16px;}
+.header_mid h2{float: left;
+               padding-top: 11px;}
+.search_area{
+        float: left;
+        width: 450px;
+        height: 50px;
+        margin-left: 150px;
+        border-radius: 50px;
+        padding-left: 2px;
+        border:#312885 2px solid;
+                }
+
+.header_mid .input{
+        float: left;
+        width: 388px;
+        height: 42px;
+        border-radius: 50px 0 0 50px;
+        border: none;
+        }       
+.header_mid button{
+        float: left;
+        border: none;
+        padding-top: 12px;
+        background: none;
+        cursor: pointer;}              
+/*날씨*/                   
+.header_mid strong{
+        float: right;
+        padding-top: 11px;}
+/*메뉴들*/
+.gnb_box{
+        overflow: hidden;
+        width: 100%;
+        border-top:#bfbfbf 1px solid;
+        font-weight: 700;}
+.gnb_box nav{
+        width: 1192px;
+        margin:0 auto;
+        font-size: 18px;}
+.gnb_box nav span{float: left;
+                  width: 195px;
+                  text-align: center;
+                  line-height: 65px;
+                  font-size: 16px;
+                  background: url(/kizang/image/hamber.png) no-repeat 24px 22px;}
+.gnb_box nav ul{float: left;}
+.gnb_box nav ul li{
+        float: left;
+        width:195px;
+        text-align: center;
+        line-height: 65px;}
+
+/*메인롤링*/
+.main{
+        position: relative;
+        height: 498px;}
+.main_text{
+        width: 1192px;
+        height: 498px;
+        margin: 0 auto;}
+.main_text p{
+        position:relative;
+        float:right;
+        top:50%;
+        transform: translate(0,-50%);
+        color: white;
+        font-size: 52px;
+        font-weight: normal;
+        text-shadow:2px 3px 5px #000000;}
+.main_banner_list {
+        position: absolute; 
+        width:100%;
+        height:498px;
+        left:0; 
+        top:0;}
+
+.main p>span{font-weight: bold;}    
+
+.main button{
+        position:absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+        z-index: 999;
+        cursor: pointer;}
+.main button.btn_pre{left: 20px;}
+.main button.btn_next{right: 20px;}
+
+/*서브배너-공지사항 */
+.sub_3{
+        position: relative;
+        width: 1192px;
+        height: 420px;
+        margin: 0 auto;
+        padding: 60px 0;}
+.notice{float: left;
+        position: relative;
+        width:582px;
+        height:296px;
+        border:#bfbfbf 1px solid;
+        box-shadow: 2px 3px 5px 0 #afafaf;
+        background-color: white;
+        }
+.notice ul {
+        overflow: hidden; 
+        width: 100%;}
+.notice ul li{
+        float:left;
+        width:20%;
+        padding: 24px 0;
+        text-align: center;
+        font-weight: 700;}
+.notice ul li.on{background: url(/kizang/image/twotone_bar.png) no-repeat 43px 12px;}
+.notice .nt_1{
+        display: none;
+        margin: 0 24px;
+        line-height: 42px;}
+.notice .nt_1 a{
+        display: block;
+        overflow: hidden;
+        float:left;
+        position: relative;
+        width:390px;
+        padding-left: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;}               
+.notice .nt_1 a::before{
+        display:block;
+        position:absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+        width: 2px;
+        height: 2px;
+        content:"";
+        background-color:  #bfbfbf;}
+.notice .nt_1 span{float: right;}
+/*서브배너- 코로나 */
+.corona{float: left;
+        position: relative;
+        width: 276px;
+        height: 296px;
+        margin: 0 25px;
+        box-shadow: 2px 3px 5px 0 #afafaf;    
+        }
+.corona a{
+        position: absolute;
+        top:110px;
+        left:50%;
+        transform:translate(-50%,0);
+        border: none;
+        background: none;
+        }
+/*서브배너- 군수 */
+.gunsu{
+        float: left;
+        position: relative;
+        width:276px;
+        height:296px;
+        background:url(/kizang/image/gunsu.png) no-repeat;
+        box-shadow: 2px 3px 5px 0 #afafaf;}
+.gunsu ul{
+        position: absolute;
+        width: 102px; 
+        height: 125px;
+        bottom:0;
+        left:0;
+        padding:14px 10px;
+        background-color: #fff;
+        }
+.gunsu ul li{
+        line-height: 25px;
+        font-size: 12px;
+        }
+
+/* 빠른 서비스 */
+/* 주민 분류 보라색 */
+.quick{
+        overflow: hidden;
+        height: 572px;
+        background:url(/kizang/image/quick_bg2.png) no-repeat center;
+        background-attachment: fixed;
+}
+        
+.quick_inner{
+        width: 1192px;
+        margin: 0 auto;}
+.quick_inner p{
+        position: relative;
+        height: 102px;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 102px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+        text-shadow:2px 3px 5px #000000;}
+.quick_inner p::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width: 7px;
+        height: 7px;
+        top: 34px;
+        right: 516px;
+        border-radius: 50%;
+        background-color:#ffe500;}
+.icon_8{
+        overflow: hidden;
+        position: relative;
+        margin-top: 20px;}
+.icon_8 ol{
+        overflow: hidden;
+        width: 1070px;
+        margin: 0 auto;}
+.icon_8 ol li{float: left;}
+.icon_8 ol a{
+        display: block;
+        padding:0 25px;
+        color: #fff;}
+.icon_8 ol li:first-child a{padding-left: 20px;}
+.icon_8 ol li:last-child a{padding-right: 20px;}
+.icon_8 ol span{
+        display: block;
+        margin-top: 15px;
+        text-align: center;}
+.icon_8 .left{
+        position: absolute;
+        top: 50%;
+        left:0;
+        transform: translate(0,-50px);
+        cursor: pointer;}
+.icon_8 .right{
+        position: absolute;
+        top: 50%;
+        right:0;
+        transform: translate(0,-50px) rotate(180deg);
+        cursor: pointer;}
+/* 고객 분류 - 빠른 서비스 */
+.three_client{
+        width: 1192px;
+        margin-top: 46px;}
+.three_client .three{
+        position: relative;
+        width: 1192px;
+        height: 70px;
+        background-color: #312885;}
+.three_client .three ul {
+        position: absolute;
+        left:50%;
+        top: -20%;
+        transform: translate(-50%,0);
+        width:786px;} 
+.three_client .three ul li{
+        float: left;
+        margin: 0 22px;} 
+.three_client .three ul li.on a{
+        display:block;
+        width: 218px;
+        height: 72px;
+        border: 2px solid #312885;
+        border-radius: 35px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 72px;
+        background-color: #fff;
+        color: #312885;}   
+
+.three_client .three ul li.on span{
+        padding-left: 24px;
+        background: url(/kizang/image/check_circle.png) no-repeat;
+        }
+.three_client .three ul li a{
+        display:block;
+        width: 218px;
+        height: 72px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 100px;
+        color: #fff;}                     
+
+.three_client .client_contents{
+        display: none;
+        width: 1192px;
+        height: 130px;
+        background-color: #fff;}
+.client_contents ul{
+        overflow: hidden;
+        position: relative;
+        top: 50%;
+        width: 888px;
+        margin: 0 auto;
+        transform: translate(0,-50%);} 
+
+.client_contents li{
+        float: left;
+        width: 222px;
+        height: 50px;
+        font-size: 16px;}
+.client_contents li a{
+        display: block;
+        line-height: 50px;}
+.client_contents li span{
+        position: relative;
+        padding-left: 10px;}
+.client_contents li span::before{
+        display:block;
+        position:absolute;
+        top: 50%;
+        left: 0;
+        width: 2px;
+        height: 2px;
+        content:"";
+        transform: translate(0,-50%);
+        background-color:  #bfbfbf;}
+
+/* 렛츠기장군 */
+.lets{
+        overflow: hidden;
+        height: 590px;
+        background: #eef1f6 url(/kizang/image/lets_image_1.png) no-repeat center;}
+.lets_in{
+        width: 1192px;
+        margin: 0 auto;}
+.lets_in>p{
+        text-align: center;
+        line-height: 165px;}
+.three_box{
+        width: 1192px;
+        height:376px;
+        margin: 0 auto;}
+/* 1. 기장축제 */
+.festi{
+        float:left;
+        width: 305px;
+        height:376px;
+        border-radius:37px 0 0 37px;
+        background: #b890f9;}
+.festi>p{padding: 20px 0;
+        text-align: center;
+        font-size: 26px;
+        text-shadow:2px 3px 5px #754db7;
+        font-weight: 700;
+        color: #fff;}
+.festi .festi_list {text-align: center;}
+.festi .festi_list img{
+        display: block;
+        width: 202px;
+        height: 202px;
+        margin: 0 auto;
+        border-radius:50%;
+        box-shadow:2px 3px 5px #754db7;
+        }
+.festi .festi_list>p{
+        padding: 10px 0;
+        text-align: center;
+        color: #fff;}
+.festi_button{
+        padding: 10px 0;
+        text-align: center;}
+.festi_button button{
+        padding: 0 10px;
+        cursor: pointer;}
+/* 2. 관광명소 */
+.tour{
+        float: left;
+        position: relative;
+        width: 582px;
+        height:376px;
+        background: #fff;}
+.tour>p{
+        padding: 20px 0;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;}
+.tour_block{
+        width: 582px;
+        height:376px;
+        margin: 0 auto;}
+.tour_block button:first-child{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        cursor: pointer;}
+.tour_block button:last-child{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        cursor: pointer;}
+
+.tour .tour_circle{
+        width:500px;
+        margin: 0 auto;}
+.tour .tour_circle .tour-box{
+        float: left;
+        width: 202px;
+        margin: 0 20px;
+        text-align: center;}
+.tour .tour-box img{
+        width: 202px;
+        height: 202px;
+        border-radius:50%;}
+.tour .tour_list_1 p:nth-child(2n){
+        padding: 10px 0;
+        font-weight: bold;
+        color: #312885;}
+.tour .tour_list_2 p:nth-child(2n){
+        padding: 10px 0;
+        font-weight: bold;
+        color: #312885;}
+/* 3.소셜네트워크 */
+.social{float: left;
+        width: 305px;
+        height:376px;
+        border-radius:0px 37px 37px 0;
+        background:#90c6f9 url(/kizang/image/lets_4.png) no-repeat center 70px;
+        }
+.social>p{
+        padding: 20px 0;
+        text-align: center;
+        font-size: 26px;
+        text-shadow:2px 3px 5px #4c8dc9;
+        color: #fff;
+        font-weight: 700;}
+.social .social_three{
+        width: 236px;
+        margin: 0 auto;
+        padding-top:110px ;}
+.social .social_three>p{position: relative;}
+.social .social_three span{
+        display: block;
+        position: absolute;
+        top:20px;
+        left:65px;}
+
+/* story 기장군 */
+.story{
+        overflow: hidden;
+        height: 504px;
+        background:url(/kizang/image/story_bg.png) no-repeat center;
+        background-attachment: fixed;
+}
+.story_in{
+        width: 1192px;
+        margin: 0 auto;}
+.news{
+        float:left;
+        width: 305px;
+        height:376px;
+        margin-top: 64px;
+        border-radius:37px 0 0 37px;
+        background:#f86969;}
+.news>p{
+        padding: 20px 0;
+        text-align: center;
+        font-size: 26px;
+        text-shadow:2px 3px 5px #b52f2f;
+        font-weight: 700;
+        color: #fff;}
+.news_square{text-align: center;}
+.news_square .story_list_1 img{
+        display: block;
+        width: 188px;
+        height: 200px;
+        margin: 0 auto;
+        box-shadow:2px 3px 5px #b52f2f;}
+.news_square .story_list_1>p{
+        padding: 10px 0;
+        text-align: center;
+        color: #fff;}
+.news_button{
+        padding: 10px 0;
+        text-align: center;}
+.news_button button{
+        padding: 0 10px;
+        cursor: pointer;}
+/* 스토리 3종 */
+.three_story{
+        float: left;
+        position: relative;
+        width: 887px;
+        height:376px;
+        margin-top: 64px;
+        border-radius: 0 37px 37px 0;
+        background: #fff;}
+.three_story>p{
+        padding: 10px 30px;
+        text-align: left;
+        font-size: 26px;}
+.square_all{
+        width: 887px;
+        height:376px;
+        margin: 0 auto;}
+.square_all button:first-child{
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        cursor: pointer;}
+.square_all button:last-child{
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        cursor: pointer;}
+.story_square{
+        overflow: hidden;
+        width:726px;
+        margin: 0 auto;}
+.story_square .stybox{
+        float: left;
+        padding: 0 20px;
+        text-align: center;}
+.story_square .stybox img{
+        width: 202px;
+        height: 188px;}
+.story_square .stybox p:nth-child(2n){
+        padding: 10px 0;
+        font-weight: bold;
+        color: #312885;}
+
+
+/* 하단 배너 */
+.banner{
+        width: 1192px;
+        height: 50px;
+        margin: 60px auto;}
+.banner_video{
+        float: left;
+        width: 1100px;}
+.banner_video a{
+        float: left;
+        margin: 0 16px;}
+.controler{float: right;
+        margin-top:15px;}
+.controler button{float: left;
+        cursor: pointer;}
+/* footer_1 */
+.info_bg{
+        width: 100%;
+        height: 48px;
+        overflow: hidden;
+        background: #434343;}
+.info_all{
+        width: 1192px;
+        height: 48px;
+        margin: 0 auto;
+        line-height: 48px;}
+
+/* 가상선택자! */
+.info_all .info_1{float: left;}
+.info_all .info_1 a{
+        float: left;
+        position: relative;
+        padding-right: 48px;
+        color: #fff;}
+.info_all .info_1 a::after{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 24px;
+        content: "";
+        width: 1px;
+        height: 10px;
+        background-color: #fff;}
+.info_all .info_1 a:last-child::after{display:none;}
+
+.info_all .info_2{float: right;}
+.info_all .info_2 a{
+        float: right;
+        position: relative;
+        padding-left: 48px;
+        color: #fff;}
+.info_all .info_2 a:first-child::after{
+        display: block;
+        position: absolute;
+        top: 18px;
+        left: 24px;
+        content: "";
+        width: 1px;
+        height: 10px;
+        background-color: #fff;}
+
+/* footet_2 */
+.copy_bg{
+        overflow: hidden;
+        width: 100%;
+        height: 124px;
+        background:#63676f;}
+.copy_all{
+        width: 1192px;
+        height: 124px;
+        margin: 0 auto;
+        margin-top: 34px;
+        color: #fff;}
+/* 1. 주소 */
+.copy_adrs{
+        float: left;
+        line-height: 20px;}
+.copy_adrs span{
+        padding-left: 36px;
+        color: #d0d0d0;}
+/* 2. 콜센터 */
+.call{float: right;}
+.call p:first-child{
+        float: right;
+        font-size: 20px;
+        color: #fff799;}
+.call .run{
+        font-size: 16px;
+        color: #fff;}
+.call .cc{
+        padding-right: 10px;
+        font-weight: 700;
+        color: #fff;}
+.call p:last-child{
+        padding-left: 70px;
+        line-height: 20px;}

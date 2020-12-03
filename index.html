@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style></style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>기장군청 홈페이지입니다.</title>
+    <link rel="stylesheet" href="/kizang/css/style.css">
+    <link rel="stylesheet" href="/kizang/css/slick.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/kizang/image/favi.png">
+    <script src="/kizang/js/jquery-1.11.3.js"></script>
+    <script src="/kizang/js/slick.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a href="#null"><span>즐겨찾기</span></a>
+            <ul>
+                <li><a href="#null">로그인</a></li>
+                <li>
+                    <select>
+                        <option>LANGUAGE</option>
+                        <option>English</option>
+                        <option>Chinese</option>
+                        <option>Japanese</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header_mid">
+            <h2><img src="/kizang/image/logo.png" alt="기장군청"></h2>
+            <div class="search_area">
+                <input type="text" class="input">
+                <button type="button"><img src="/kizang/image/dotbogi.png" alt="검색하기"></button>   
+            </div>
+
+            <!-- 날씨 -->
+            <strong><img src="/kizang/image/weather.png" alt="날씨정보"></strong>
+        </div>
+
+        <!-- 네비게이션 -->
+        <div class="gnb_box">
+            <nav>
+                <span>전체메뉴</span>
+                <ul>
+                    <li><a href="#null"> 전자민원</a></li>
+                    <li><a href="#null"> 정보공개</a></li>
+                    <li><a href="#null"> 복지정보</a></li>
+                    <li><a href="#null"> 기장소개</a></li>
+                    <li><a href="#null"> 관광안내</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--메인롤링배너-->
+    <div class="main">
+        <div class="main_banner_list">
+            <div style="background:url(image/mainrolling.png) no-repeat center; height: 498px;">        
+                <div class="main_text">        
+                    <p>발길이<br>머무는 곳이<br><span>풍경이 되는 곳<br>기장군</span>입니다.</p>
+                </div>
+           </div>   
+           <div style="background:url(image/main2.png) no-repeat center; height: 498px;">        
+               <div class="main_text">        
+                   <p>손길이<br>머무는 곳이<br><span>풍경이 되는 곳<br>기장군</span>입니다.</p>
+               </div>
+          </div>       
+        </div>        
+        <button class="btn_pre slick-prev"><img src="/kizang/image/main_left.png"></button>
+        <button class="btn_next slick-next"><img src="/kizang/image/main_right.png"></button>
+    </div>
+    <script>
+        $('.main_banner_list').slick({            
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow:$(".btn_pre"),
+            nextArrow:$(".btn_next")
+        });
+    </script>
+    <section class="sub_3">
+        <!--공지사항-->
+        <div class="notice">
+            <ul>
+                <li class="on" data-title="tab1"><a href="#null">전체</a></li>
+                <li data-title="tab2"><a href="#null">공지사항</a></li>
+                <li data-title="tab3"><a href="#null">고시공고</a></li>
+                <li data-title="tab4"><a href="#null">보도자료</a></li>
+                <li data-title="tab5"><a href="#null">의회소식</a></li>
+            </ul>
+            <ol id="tab1" class="nt_1" style="display: block;">
+                <li><a href="#null">제 13회 치매극복의 날 행사(비대면) 사전신청 및 참여 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 8월 건축허가(신고) 및 사용승인</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 재활용품 품질개선 지원사업 자원관리도우미 참여자 2차 모집 변경 공고</a><span>2020-09-07</span></li>
+                <li><a href="#null">민영주택 (영선 덕계 경동 스마트 홈) 장애인특별공급 신청 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">기장군도시관리공단 2020년도 제9회 기간제근로자 공개채용 공고</a><span>2020-09-07</span></li>
+            </ol>
+            <ol id="tab2" class="nt_1">
+                <li><a href="#null">제 14회 치매극복의 날 행사(비대면) 사전신청 및 참여 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 8월 건축허가(신고) 및 사용승인</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 재활용품 품질개선 지원사업 자원관리도우미 참여자 2차 모집 변경 공고</a><span>2020-09-07</span></li>
+                <li><a href="#null">민영주택 (영선 덕계 경동 스마트 홈) 장애인특별공급 신청 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">기장군도시관리공단 2020년도 제9회 기간제근로자 공개채용 공고</a><span>2020-09-07</span></li>
+            </ol>
+            <ol id="tab3" class="nt_1">
+                <li><a href="#null">제 15회 치매극복의 날 행사(비대면) 사전신청 및 참여 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 8월 건축허가(신고) 및 사용승인</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 재활용품 품질개선 지원사업 자원관리도우미 참여자 2차 모집 변경 공고</a><span>2020-09-07</span></li>
+                <li><a href="#null">민영주택 (영선 덕계 경동 스마트 홈) 장애인특별공급 신청 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">기장군도시관리공단 2020년도 제9회 기간제근로자 공개채용 공고</a><span>2020-09-07</span></li>
+            </ol>
+            <ol id="tab4" class="nt_1">
+                <li><a href="#null">제 16회 치매극복의 날 행사(비대면) 사전신청 및 참여 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 8월 건축허가(신고) 및 사용승인</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 재활용품 품질개선 지원사업 자원관리도우미 참여자 2차 모집 변경 공고</a><span>2020-09-07</span></li>
+                <li><a href="#null">민영주택 (영선 덕계 경동 스마트 홈) 장애인특별공급 신청 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">기장군도시관리공단 2020년도 제9회 기간제근로자 공개채용 공고</a><span>2020-09-07</span></li>
+            </ol>
+            <ol id="tab5"class="nt_1">
+                <li><a href="#null">제 17회 치매극복의 날 행사(비대면) 사전신청 및 참여 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 8월 건축허가(신고) 및 사용승인</a><span>2020-09-07</span></li>
+                <li><a href="#null">2020년 재활용품 품질개선 지원사업 자원관리도우미 참여자 2차 모집 변경 공고</a><span>2020-09-07</span></li>
+                <li><a href="#null">민영주택 (영선 덕계 경동 스마트 홈) 장애인특별공급 신청 안내</a><span>2020-09-07</span></li>
+                <li><a href="#null">기장군도시관리공단 2020년도 제9회 기간제근로자 공개채용 공고</a><span>2020-09-07</span></li>
+            </ol>
+        </div>
+        <script>
+            $(function(){
+                $(".notice ul li").click(function(){
+                    $(".notice ul li").removeClass("on");
+                    $(this).addClass("on");
+                    var tabs=$(this).data("title");
+                    $(".nt_1").hide();
+                    $("#"+tabs).show(100);
+                });
+            });
+
+        </script>
+        <!--코로나19 바로가기-->
+        <div class="corona">
+            <img src="/kizang/image/sec1_corona19.png" alt="서브배너1">
+            <a href="#null"><img src="/kizang/image/yellow.png"></a>
+        </div>
+        <!-- 오규석 군수 -->
+        <div class="gunsu">            
+            <ul>
+                <li><a href="#null">· 메니페스토</a></li>
+                <li><a href="#null">· 새로운 약속</a></li>
+                <li><a href="#null">· 기장의 비전</a></li>
+                <li><a href="#null">· 2030년 기장</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 빠른서비스 -->
+    <section class="quick">
+        <div class="quick_inner">
+            <p>빠른 서비스</p>
+
+            <div class="icon_8">
+                <button class="left slick-prev"><img src="/kizang/image/quick_left.png"></button>
+                <!-- 아이콘버튼 8종 -->            
+                <ol>
+                    <li><a href="#null"><img src="/kizang/image/quick_1.png"><span>온라인<br>민원신청</span></a></li>
+                    <li><a href="#null"><img src="/kizang/image/quick_2.png"><span>토지이용<br>계획열람</span></a></li>
+                    <li><a href="#null"><img src="/kizang/image/quick_3.png"><span>경제/취업</span></a></li>
+                    <li><a href="#null"><img src="/kizang/image/quick_4.png"><span>개별공시지가<br>안내</span></a></li>
+                    <li><a href="#null"><img src="/kizang/image/quick_5.png"><span>대형폐기물</span></a></li>
+                    <li><a href="#null"><img src="/kizang/image/quick_6.png"><span>지방세</span></a></li>
+                    <li><a href="#null"><img src="/kizang/image/quick_7.png"><span>경제허브센터</span></a></li>
+                    <li><a href="#null"><img src="/kizang/image/quick_8.png"><span>평생교육센터</span></a></li>
+                
+                    <li><a href="#null"><img src="/kizang/image/quick_5.png"><span>대형폐기물</span></a></li>
+                    <li><a href="#null"><img src="/kizang/image/quick_6.png"><span>지방세</span></a></li>
+                </ol>                    
+                <button class="right slick-next" ><img src="/kizang/image/quick_left.png" alt=""></button>
+            </div>           
+           <script>
+                $('.icon_8 ol').slick({            
+                    slidesToShow: 8,
+                    prevArrow:$(".left"),
+                    nextArrow:$(".right")
+                });
+            </script> 
+            <div class="three_client">
+                <div class="three">
+                    <ul>
+                        <li class="on" data-purple="pur1"><a href="#null"><span>군민</span></a></li> 
+                        <li data-purple="pur2"><a href="#null"><span>관광객</span></a></li>
+                        <li data-purple="pur3"><a href="#null"><span>기업인</span></a></li>
+                    </ul>
+                </div>
+                <div id="pur1" class="client_contents" style="display: block;">
+                    <ul>
+                        <li><a href="#null"><span>보건/복지</span></a></li>
+                        <li><a href="#null"><span>공시지가</span></a></li>
+                        <li><a href="#null"><span>여권발급안내</span></a></li>
+                        <li><a href="#null"><span>민원서식</span></a></li>
+                        <li><a href="#null"><span>재난대응안내</span></a></li>
+                        <li><a href="#null"><span>자유게시판</span></a></li>
+                        <li><a href="#null"><span>공무원 불친절 신고</span></a></li>
+                        <li><a href="#null"><span>신문고</span></a></li>
+                    </ul>
+                </div>
+                <div id="pur2" class="client_contents">
+                    <ul>
+                        <li><a href="#null"><span>보건/복지</span></a></li>
+                        <li><a href="#null"><span>공시지가</span></a></li>
+                        <li><a href="#null"><span>여권발급안내</span></a></li>
+                        <li><a href="#null"><span>민원서식</span></a></li>
+                        <li><a href="#null"><span>재난대응안내</span></a></li>
+                        <li><a href="#null"><span>자유게시판</span></a></li>
+                        <li><a href="#null"><span>공무원 불친절 신고</span></a></li>
+                        <li><a href="#null"><span>신문고</span></a></li>
+                    </ul>
+                </div>
+                <div id="pur3" class="client_contents">
+                    <ul>
+                        <li><a href="#null"><span>보건/복지</span></a></li>
+                        <li><a href="#null"><span>공시지가</span></a></li>
+                        <li><a href="#null"><span>여권발급안내</span></a></li>
+                        <li><a href="#null"><span>민원서식</span></a></li>
+                        <li><a href="#null"><span>재난대응안내</span></a></li>
+                        <li><a href="#null"><span>자유게시판</span></a></li>
+                        <li><a href="#null"><span>공무원 불친절 신고</span></a></li>
+                        <li><a href="#null"><span>신문고</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                $(".three ul li").click(function(){
+                    $(".three ul li").removeClass("on");
+                    $(this).addClass("on");
+                    var purple=$(this).data("purple");
+                    $(".client_contents").hide();
+                    $("#"+purple).show(100);
+                });
+            });
+        </script>
+    </section>
+
+    <!-- 렛츠 기장군 -->
+    <section class="lets">        
+        <div class="lets_in">
+            <p><img src="/kizang/image/Lets_kizang.png" alt="렛츠기장군"></p>
+            <!-- 대표축제 -->
+            <div class="three_box">
+                <div class="festi">
+                    <p>대표축제</p>
+                    <div class="festi_circle">
+                        <div class="festi_list">
+                            <img src="/kizang/image/lets_festi_1.jpeg" alt="">
+                            <p>기장 멸치축제</p>
+                        </div>
+                        <div class="festi_list">
+                            <img src="/kizang/image/lets_1.png" alt="">
+                            <p>기장 멸치축제</p>
+                        </div>
+
+                        <div class="festi_list">
+                            <img src="/kizang/image/people.jpg" alt="">
+                            <p>기장 꽁치축제</p>
+                        </div>
+                    </div>
+                    <div class="festi_button">
+                        <button class="btn_pre_f slick-prev"><img src="/kizang/image/circle1.png" alt=""></button>
+                        <button class="btn_next_f slick-next"><img src="/kizang/image/circle2.png" alt=""></button>
+                    </div>  
+                </div>
+                <script>
+                    $('.festi_circle').slick({            
+                        slidesToShow: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        prevArrow:$(".btn_pre_f"),
+                        nextArrow:$(".btn_next_f")
+                    });
+                </script>
+                <!-- 관광명소 -->
+                <div class="tour">
+                    <p>관광명소</p>
+                    <div class="tour_block">
+                        <button class="tour_bt1 slick-prev"><img src="/kizang/image/story_left.png" alt=""></button>
+                        <div class="tour_circle">
+                            <div class="tour_list_2 tour-box">
+                                <img src="/kizang/image/sakura.jpg" alt="">
+                                <p>기장 아울렛</p>
+                                <p>부산 최대 규모의<br>지중해풍 쇼핑단지</p>
+                            </div>
+                            <div class="tour_list_1 tour-box">
+                                <img src="/kizang/image/cafe.jpg" alt="">
+                                <p>해동 용궁사</p>
+                                <p>바다와 사찰이<br>빗어낸 절경</p>
+                            </div>
+                            <div class="tour_list_1 tour-box">
+                                <img src="/kizang/image/lets_2.png" alt="">
+                                <p>해동 용궁사</p>
+                                <p>바다와 사찰이<br>빗어낸 절경</p>
+                            </div>
+                            <div class="tour_list_2 tour-box">
+                                <img src="/kizang/image/lets_3.png" alt="">
+                                <p>기장 아울렛</p>
+                                <p>부산 최대 규모의<br>지중해풍 쇼핑단지</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <button class="tour_bt2 slick-next"><img src="/kizang/image/story_right.png" alt=""></button>
+                    </div>
+                </div>
+
+                <script>
+                    $('.tour_circle').slick({            
+                        slidesToShow: 2,
+                        prevArrow:$(".tour_bt1"),
+                        nextArrow:$(".tour_bt2")
+                    });
+                </script>
+
+                <!-- 소셜네트워크 -->
+                <div class="social">
+                    <p>소셜네트워크</p>
+                    <div class="social_three">
+                        <p><a href="#null"><img src=image/social_plus.png><span>기장군 공식 페이스북</span></a></p>
+                        <p><a href="#null"><img src=image/social_plus.png><span>기장군 공식 블로그</span></a></p>
+                        <p><a href="#null"><img src=image/social_plus.png><span>기장군 공식 트위터</span></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 기장스토리 -->
+    <section class="story">
+        <div class="story_in">
+            <!-- 기장뉴스 -->
+            <div class="news">
+                <p>기장뉴스</p>
+                <div class="news_square">
+                    <div class="story_list_1">
+                        <img src="/kizang/image/story_tip.png" alt="">
+                        <p>제 68회 군정뉴스</p>
+                    </div>
+                    <div class="story_list_1">
+                        <img src="/kizang/image/story_1.png" alt="">
+                        <p>제 68회 군정뉴스</p>
+                    </div>    
+
+                    <div class="story_list_1">
+                        <img src="/kizang/image/news2.jpg" alt="">
+                        <p>핫이슈</p>
+                    </div>
+                </div>
+                <div class="news_button">
+                    <button class="n_bt1 slick-prev"><img src="/kizang/image/circle1.png" alt=""></button>
+                    <button class="n_bt2 slick-next"><img src="/kizang/image/circle2.png" alt=""></button>
+                </div>
+            </div>  
+            <script>
+                $('.news_square').slick({            
+                    slidesToShow: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    prevArrow:$(".n_bt1"),
+                    nextArrow:$(".n_bt2")
+                });
+            </script>  
+            <!-- story기장군 -->
+            <div class="three_story">
+                <p><img src="/kizang/image/story_title.png" alt=""></p>
+                <div class="square_all">
+                    <button class="sty_bt1 slick-prev"><img src="/kizang/image/story_left.png" alt=""></button>
+                    <div class="story_square">
+                        <div class="story_list_2 stybox">
+                            <img src="/kizang/image/story_safe.png" alt="">
+                            <p>재난발생시 국민 행동 요령</p>
+                            <p>평소에 숙지하여 재난에 대비</p>
+                        </div>
+                        <div class="story_list_3 stybox">
+                            <img src="/kizang/image/story_3.jpg" alt="">
+                            <p>공연프로그램</p>
+                            <p>성냥팔이 소녀</p>
+                        </div>
+                        <div class="story_list_4 stybox">
+                            <img src="/kizang/image/story_4.png" alt="">
+                            <p>무료영화관 소식</p>
+                            <p>무기한 연기 안내</p>
+                        </div>
+                        <div class="story_list_3 stybox">
+                            <img src="/kizang/image/story_3.png" alt="">
+                            <p>공연프로그램</p>
+                            <p>성냥팔이 소녀</p>
+                        </div>
+                        <div class="story_list_4 stybox">
+                            <img src="/kizang/image/story_2.png" alt="">
+                            <p>무료영화관 소식</p>
+                            <p>무기한 연기 안내</p>
+                        </div>
+                    </div>
+                    <button class="sty_bt2 slick-next"><img src="/kizang/image/story_right.png" alt=""></button>
+                </div>
+            </div> 
+            <script>
+                $('.story_square').slick({            
+                    slidesToShow: 3,
+                    prevArrow:$(".sty_bt1"),
+                    nextArrow:$(".sty_bt2")
+                });
+            </script>  
+        </div>
+    </section>
+    <!-- 하단배너 -->
+    <section class="banner">
+        <div class="banner_video">
+            <a href="#null"><img src="/kizang/image/nav1.png" alt=""></a>
+            <a href="#null"><img src="/kizang/image/nav2.png" alt=""></a>
+            <a href="#null"><img src="/kizang/image/nav3.png" alt=""></a>
+            <a href="#null"><img src="/kizang/image/nav4.png" alt=""></a>
+            <a href="#null"><img src="/kizang/image/nav5.png" alt=""></a>
+            <a href="#null"><img src="/kizang/image/nav3.png" alt=""></a>
+            <a href="#null"><img src="/kizang/image/nav4.png" alt=""></a>
+            <a href="#null"><img src="/kizang/image/nav3.png" alt=""></a>
+            <a href="#null"><img src="/kizang/image/nav4.png" alt=""></a>
+        </div>
+
+        <div class="controler">
+            <button class="slick-prev"><img src="/kizang/image/bt_01.png" alt=""></button>
+            <button class="play"><img src="/kizang/image/bt_02.png" alt="play"></button>
+            <button class="pause"><img src="/kizang/image/pause.png" alt="pause"></button>
+            <button class="slick-next"><img src="/kizang/image/bt_03.png" alt=""></button>
+            <button class="hamall"><img src="/kizang/image/bt_04.png" alt="ham"></button>
+        </div>
+
+        <script>
+            $('.banner_video').slick({            
+                slidesToShow: 5,          
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                prevArrow:$(".controler button"),
+                nextArrow:$(".controler button")
+            });
+            $(function(){
+                $(".controler .play").hide();
+
+                $(".controler .play").click(function(){
+                    $(this).hide();
+                    $(".controler .pause").show();
+                    $(".banner_video").slick("slickPlay")
+                });
+                $(".controler .pause").click(function(){
+                    $(this).hide();
+                    $(".controler .play").show();
+                    $(".banner_video").slick("slickPause")
+                });
+
+
+
+            });
+        </script>
+    </section>
+    <footer>
+        <div class="info_bg">
+            <div class="info_all">
+                <div class="info_1">
+                    <a href="#null">이용안내</a>
+                    <a href="#null">개인정보처리방침</a>
+                    <a href="#null">뷰어 다운로드</a>
+                    <a href="#null">찾아오시는 길</a>
+                </div>
+                <div class="info_2">
+                    <a href="#null">실국 및 사업소/구청</a>
+                    <a href="#null">유관기관</a>
+                </div>
+            </div>
+        </div>
+        <!-- 카피라이트 -->
+        <div class="copy_bg">
+            <div class="copy_all">
+                <div class="copy_adrs">
+                    <p>주소 : (46077) 부산광역시 기장군 기장읍 기장대로 560 TEL.051-709-4000<br><span>(c)2011 by GIJANG-GUN All right Reserved.</span></p>
+                </div>
+                <div class="call">
+                    <p><span class="cc">콜센터</span> 051.709.4000 <span class="run">(365일)</span></p>
+                    <p>평일 07:00~21:00<br>토·공휴일 09:00~18:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
